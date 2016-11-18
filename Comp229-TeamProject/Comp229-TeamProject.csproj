@@ -170,9 +170,8 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="assets\reflection-pad-gaming-gamepad%281%29.jpg" />
-    <Content Include="assets\reflection-pad-gaming-gamepad%282%29.jpg" />
-    <Content Include="assets\reflection-pad-gaming-gamepad.jpg" />
+    <Content Include="assets\game-controller-joystick-joypad-gamepad-.jpeg" />
+    <Content Include="assets\game-controller-joystick-joypad-gamepad-159204.jpeg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
