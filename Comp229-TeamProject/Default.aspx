@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Comp229_TeamProject._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <%-- Amandeep deol 
-        Mohmaoud--%>
+    <%-- Amandeep deol studentid-300912354
+        Mohmaoud studentid-3009435435--%>
     
     <style>
         .headlo{
