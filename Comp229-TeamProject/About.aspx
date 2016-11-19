@@ -7,7 +7,9 @@
         Mohmaoud studentid-3009435435--%>
     <h2>Information About Machoco</h2>
               <%--We explained Machoo game--%>
-    <div >
+
+    <%-- we did Css coding --%>
+    <div style="text-align:left">
   <p>A game is structured form of play, usually undertaken for enjoyment and sometimes used as an educational tool.
       <br />
       1) Games are distinct from work, which is usually carried out for remuneration.
