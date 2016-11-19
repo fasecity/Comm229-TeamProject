@@ -27,6 +27,7 @@
         <%-- we make spaces --%>
         
         <p><a href="Account/Register.aspx" class="btn btn-primary btn-lg">Register</a></p>
+        <asp:HyperLink ID="HyperLink1" runat="server" >HyperLink</asp:HyperLink>
     </div>
 
    
