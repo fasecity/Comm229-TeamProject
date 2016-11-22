@@ -172,6 +172,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="assets\game-controller-joystick-joypad-gamepad-.jpeg" />
     <Content Include="assets\game-controller-joystick-joypad-gamepad-159204.jpeg" />
+    <Content Include="assets\pexels-photo-194511.jpeg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
