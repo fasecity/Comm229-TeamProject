@@ -62,6 +62,13 @@
                      <asp:Button ID="SubmitButton" class="btn" runat="server" Text="update" />
                  </ItemTemplate>
             </asp:TemplateField>
+
+             
+            <asp:TemplateField>
+                 <ItemTemplate>
+                     <asp:Button ID="SubmitButton" class="btn" runat="server" Text="Delete" />
+                 </ItemTemplate>
+            </asp:TemplateField>
     </Columns>
  
     
