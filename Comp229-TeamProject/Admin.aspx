@@ -66,7 +66,13 @@
              
             <asp:TemplateField>
                  <ItemTemplate>
-                     <asp:Button ID="SubmitButton" class="btn" runat="server" Text="Delete" />
+                     <asp:Button ID="DeleteButton" class="btn" runat="server" Text="Delete" />
+                 </ItemTemplate>
+            </asp:TemplateField>
+
+            <asp:TemplateField>
+                 <ItemTemplate>
+                     <asp:Button ID="AddButton" class="btn" runat="server" Text="Add" />
                  </ItemTemplate>
             </asp:TemplateField>
     </Columns>
