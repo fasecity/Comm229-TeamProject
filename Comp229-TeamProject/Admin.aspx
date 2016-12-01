@@ -134,11 +134,20 @@
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Team_ProjectConnectionString %>" 
             SelectCommand="SELECT * FROM [Games]"
-            DeleteCommand="Delete from [Games] WHERE [GamesID]=@GamesID">
+            DeleteCommand="Delete from [Games] WHERE [GamesID]=@GamesID" UpdateCommand="update [Games] set Title=@Title,Genre=@Genre,Price=@Price,
+            Description=@Description,Review_score=@Review_score,Completed_status=@Completed_status  WHERE GamesID=@GamesID">
             <DeleteParameters>
                 <asp:Parameter Name="GamesID" Type="Int32" />
+</DeleteParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="Title" Type="String" />
+                 <asp:Parameter Name="Genre" Type="String" />
+                <asp:Parameter Name="Price" Type="Double" />
+                 <asp:Parameter Name="Description" Type="String" />
+                <asp:Parameter Name="Review_score" Type="Int32" />
+                 <asp:Parameter Name="Completed_status" Type="String" />
+            </UpdateParameters>
 
-            </DeleteParameters>
         </asp:SqlDataSource>
      </div>
 
