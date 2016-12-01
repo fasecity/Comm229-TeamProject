@@ -67,13 +67,15 @@
              
             <asp:TemplateField>
                  <ItemTemplate>
-                     <asp:Button ID="DeleteButton" class="btn" runat="server" Text="Delete" />
+                     <%--<asp:Button ID="DeleteButton" class="btn" runat="server" Text="Delete" />--%>
+                      <asp:Button ID="DeleteButton" class="btn" runat="server" Text="Delete"  />
+                     
                  </ItemTemplate>
             </asp:TemplateField>
 
             <asp:TemplateField>
                  <ItemTemplate>
-                     <asp:Button ID="AddButton" class="btn" onClick="AddButton_Click" runat="server" Text="Add" />
+                     <%--<asp:Button ID="AddButton" class="btn" onClick="AddButton_Click" runat="server" Text="Add" />--%>
                  </ItemTemplate>
             </asp:TemplateField>
     </Columns>
@@ -85,7 +87,7 @@
 
 
 </table>
-
+    <%--<asp:Button ID="DeleteButton" class="btn" runat="server" Text="Delete" OnClick="DeleteButton_Click" />--%>
  <div class="form-group">
   <label class="usr">Title:</label>
 <asp:TextBox class="form-control" ID="TextTitle" runat="server"/>
@@ -109,6 +111,35 @@
     <div class="form-group">
   <label class="usr">Completed:</label>
 <asp:TextBox class="form-control" ID="TextCompleted" runat="server"/>
+         <asp:Button ID="AddButton" class="btn" onClick="AddButton_Click" runat="server" Text="Add" />
+        
+        <h1>Delete and edit</h1>
+
+
+
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="GamesID" DataSourceID="SqlDataSource1" OnRowDeleting="GridView2_RowDeleting">
+            <Columns>
+                <asp:BoundField DataField="GamesID" HeaderText="GamesID" InsertVisible="False" ReadOnly="True" SortExpression="GamesID" />
+                <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
+                <asp:BoundField DataField="Genre" HeaderText="Genre" SortExpression="Genre" />
+                <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
+                <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
+                <asp:BoundField DataField="Review_score" HeaderText="Review_score" SortExpression="Review_score" />
+                <asp:BoundField DataField="Completed_status" HeaderText="Completed_status" SortExpression="Completed_status" />
+          <asp:CommandField ShowDeleteButton="true" />
+                
+                 <asp:CommandField ShowEditButton="true" />
+
+                  </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Team_ProjectConnectionString %>" 
+            SelectCommand="SELECT * FROM [Games]"
+            DeleteCommand="Delete from [Games] WHERE [GamesID]=@GamesID">
+            <DeleteParameters>
+                <asp:Parameter Name="GamesID" Type="Int32" />
+
+            </DeleteParameters>
+        </asp:SqlDataSource>
      </div>
 
 

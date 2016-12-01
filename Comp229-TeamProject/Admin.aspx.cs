@@ -73,5 +73,10 @@ namespace Comp229_TeamProject
             }
 
         }
+
+        protected void GridView2_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
     } 
 }
