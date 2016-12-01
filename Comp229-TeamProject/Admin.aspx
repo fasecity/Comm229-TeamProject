@@ -60,7 +60,7 @@
             <asp:TemplateField>
                  <ItemTemplate>
                                                                                  <%--added update comandName--%>
-                     <asp:Button ID="UpdateButton" class="btn" runat="server" Text="update" CommandName="Update" />
+                    <%-- <asp:Button ID="UpdateButton" class="btn" runat="server" Text="update" CommandName="Update" />--%>
                  </ItemTemplate>
             </asp:TemplateField>
 
@@ -68,7 +68,7 @@
             <asp:TemplateField>
                  <ItemTemplate>
                      <%--<asp:Button ID="DeleteButton" class="btn" runat="server" Text="Delete" />--%>
-                      <asp:Button ID="DeleteButton" class="btn" runat="server" Text="Delete"  />
+                    <%--  <asp:Button ID="DeleteButton" class="btn" runat="server" Text="Delete"  />--%>
                      
                  </ItemTemplate>
             </asp:TemplateField>
