@@ -59,7 +59,8 @@
         </asp:TemplateField>
             <asp:TemplateField>
                  <ItemTemplate>
-                     <asp:Button ID="SubmitButton" class="btn" runat="server" Text="update" />
+                                                                                 <%--added update comandName--%>
+                     <asp:Button ID="UpdateButton" class="btn" runat="server" Text="update" CommandName="Update" />
                  </ItemTemplate>
             </asp:TemplateField>
 
@@ -72,7 +73,7 @@
 
             <asp:TemplateField>
                  <ItemTemplate>
-                     <asp:Button ID="AddButton" class="btn" runat="server" Text="Add" />
+                     <asp:Button ID="AddButton" class="btn" onClick="AddButton_Click" runat="server" Text="Add" />
                  </ItemTemplate>
             </asp:TemplateField>
     </Columns>
@@ -83,11 +84,32 @@
 
 
 
+</table>
 
-
-
-
-
+ <div class="form-group">
+  <label class="usr">Title:</label>
+<asp:TextBox class="form-control" ID="TextTitle" runat="server"/>
+     </div>
+    <div class="form-group">
+  <label class="usr">Genre:</label>
+<asp:TextBox class="form-control" ID="TextGenre" runat="server"/>
+     </div>
+    <div class="form-group">
+  <label class="usr">Price:</label>
+<asp:TextBox class="form-control" ID="TextPrice" runat="server"/>
+     </div>
+    <div class="form-group">
+  <label class="usr">Description:</label>
+<asp:TextBox class="form-control" ID="TextDescription" runat="server"/>
+     </div>
+    <div class="form-group">
+  <label class="usr">Review score:</label>
+<asp:TextBox class="form-control" ID="TextReview" runat="server"/>
+     </div>
+    <div class="form-group">
+  <label class="usr">Completed:</label>
+<asp:TextBox class="form-control" ID="TextCompleted" runat="server"/>
+     </div>
 
 
 

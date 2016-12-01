@@ -32,5 +32,46 @@ namespace Comp229_TeamProject
 
             return ds;
         }
-    }
+
+
+        protected void AddButton_Click(object sender, EventArgs e)
+        {
+            SqlCommand comm = new SqlCommand("INSERT INTO Games (Title, Genre, Price, Description,Review_score,Completed_status) VALUES(@Title, @Genre, @Price, @Description,@Review_score,@Completed_status)", connection);
+
+            comm.Parameters.Add("@Title", System.Data.SqlDbType.VarChar);
+            comm.Parameters["@Title"].Value = TextTitle.Text;
+
+            comm.Parameters.Add("@Genre", System.Data.SqlDbType.VarChar);
+            comm.Parameters["@Genre"].Value = TextGenre.Text;
+
+            comm.Parameters.Add("@Price", System.Data.SqlDbType.Money);
+            comm.Parameters["@Price"].Value = TextPrice.Text;
+
+            comm.Parameters.Add("@Description", System.Data.SqlDbType.VarChar);
+            comm.Parameters["@Description"].Value = TextDescription.Text;
+
+            comm.Parameters.Add("@Review_score", System.Data.SqlDbType.Int);
+            comm.Parameters["@Review_score"].Value = TextReview.Text;
+
+            comm.Parameters.Add("@Completed_status", System.Data.SqlDbType.VarChar);
+            comm.Parameters["@Completed_status"].Value = TextCompleted.Text;
+
+            try
+            {
+                connection.Open();
+                comm.ExecuteNonQuery();
+                Response.Redirect("About.aspx");
+            }
+            //catch (Exception)
+            //{
+
+            //    Response.Write("<script> alert('error';
+            //}
+
+            finally {
+                connection.Close();
+            }
+
+        }
+    } 
 }

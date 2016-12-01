@@ -20,6 +20,7 @@
         }
         .table{
             color:azure;
+            font-size:14px;
         }
       .jumbotron{
            background-image:url("assets/pexels-photo-194511.jpeg");
@@ -122,7 +123,7 @@
         </asp:TemplateField>
             <asp:TemplateField>
                  <ItemTemplate>
-                     <asp:Button ID="SubmitButton" class="btn" runat="server" Text="update" />
+                     <%--<asp:Button ID="SubmitButton" class="btn" runat="server" Text="update" />--%>
                  </ItemTemplate>
             </asp:TemplateField>
     </Columns>

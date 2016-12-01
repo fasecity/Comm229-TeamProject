@@ -44,7 +44,7 @@ input[type="select"] {
     }
 }
  /*< mohamoud mohamed 300435435- jumbotron-%>*/
-.jumbotron {
+/*.jumbotron {
    
     /*background-image: url('../assets/game-controller-joystick-joypad-gamepad-159204.jpeg');*/
     /*background-size:cover;*/
@@ -55,7 +55,7 @@ input[type="select"] {
     opacity:0.9;*/
     /*position: relative;*/
 
-}
+}*/
 .navbar-inverse {
     background-color:#19031d;
     border-color: #080808;
