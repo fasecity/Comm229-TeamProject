@@ -170,7 +170,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Admin.aspx" />
+    <Content Include="AdminSecure\Admin.aspx" />
     <Content Include="assets\game-controller-joystick-joypad-gamepad-.jpeg" />
     <Content Include="assets\game-controller-joystick-joypad-gamepad-159204.jpeg" />
     <Content Include="assets\pexels-photo-194511.jpeg" />
@@ -182,7 +182,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="AdminSecure\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Rent.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -336,11 +338,11 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin.aspx.cs">
+    <Compile Include="AdminSecure\Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin.aspx.designer.cs">
+    <Compile Include="AdminSecure\Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -366,6 +368,13 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rent.aspx.cs">
+      <DependentUpon>Rent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rent.aspx.designer.cs">
+      <DependentUpon>Rent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -390,7 +399,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AdminSecure\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
