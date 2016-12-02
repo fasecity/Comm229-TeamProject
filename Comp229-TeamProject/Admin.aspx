@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Admin" Language="C#" MasterPageFile="~/Site.Master"  AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="Comp229_TeamProject.Admin" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+   <h1>Read Games</h1>
     <table class="table">
      <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table" EditRowStyle-BorderStyle="Groove" EditRowStyle-CssClass="table" BorderStyle="None" CellSpacing="3" GridLines="Horizontal">
     <Columns>
@@ -86,7 +86,13 @@
 
 
 
+
 </table>
+   
+    
+    
+     <div class="calla">
+         <h1>Add a Game</h1>
     <%--<asp:Button ID="DeleteButton" class="btn" runat="server" Text="Delete" OnClick="DeleteButton_Click" />--%>
  <div class="form-group">
   <label class="usr">Title:</label>
@@ -111,13 +117,16 @@
     <div class="form-group">
   <label class="usr">Completed:</label>
 <asp:TextBox class="form-control" ID="TextCompleted" runat="server"/>
-         <asp:Button ID="AddButton" class="btn" onClick="AddButton_Click" runat="server" Text="Add" />
-        
+         <br />
+        <asp:Button ID="AddButton" class="btn" onClick="AddButton_Click" runat="server" Text="Add" />
+        </div>
+
+       
         <h1>Delete and edit</h1>
 
 
 
-        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="GamesID" DataSourceID="SqlDataSource1" OnRowDeleting="GridView2_RowDeleting">
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="GamesID" DataSourceID="SqlDataSource1" OnRowDeleting="GridView2_RowDeleting" BorderColor="#CCFFFF" CssClass="table" ForeColor="Black" GridLines="Horizontal">
             <Columns>
                 <asp:BoundField DataField="GamesID" HeaderText="GamesID" InsertVisible="False" ReadOnly="True" SortExpression="GamesID" />
                 <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
@@ -153,7 +162,7 @@
 
 
 
-
+    
 
 
 

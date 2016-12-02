@@ -390,6 +390,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AdminSecure\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>

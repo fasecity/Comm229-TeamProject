@@ -55,7 +55,7 @@ input[type="select"] {
     opacity:0.9;*/
     /*position: relative;*/
 
-}*/
+
 .navbar-inverse {
     background-color:#19031d;
     border-color: #080808;
@@ -92,4 +92,7 @@ input[type="select"] {
     background-color: #ca0606;
     border-color: #1d242b;
 }
- 
+.calla{
+      margin-left:30px;
+
+}
