@@ -34,5 +34,10 @@ namespace Comp229_TeamProject
 
             return ds;
         }
+
+        protected void GridView1_RowUpdated(object sender, GridViewUpdatedEventArgs e)
+        {
+
+        }
     }
 }

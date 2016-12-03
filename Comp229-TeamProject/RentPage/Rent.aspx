@@ -5,7 +5,7 @@
     <h1>Rent A Game!!!!</h1>
     
      <table class="table">
-     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table" EditRowStyle-BorderStyle="Groove" EditRowStyle-CssClass="table" BorderStyle="None" CellSpacing="3" GridLines="Horizontal">
+     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table" EditRowStyle-BorderStyle="Groove" EditRowStyle-CssClass="table" BorderStyle="None" CellSpacing="3" GridLines="Horizontal" OnRowUpdated="GridView1_RowUpdated">
     <Columns>
         <asp:TemplateField HeaderText="Game Id ">
             <ItemTemplate>
@@ -62,7 +62,7 @@
         </asp:TemplateField>
             <asp:TemplateField>
                  <ItemTemplate>
-                     <%--<asp:Button ID="SubmitButton" class="btn" runat="server" Text="update" />--%>
+                     <asp:Button ID="SubmitButton" class="btn" runat="server" Text="Rent This" />
                  </ItemTemplate>
             </asp:TemplateField>
     </Columns>
