@@ -2,16 +2,19 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h1>Rent A Game!!!!</h1>
+    <h1>Rent and Rate Game!!!!</h1>
+    <p>Easily type if you want to rent and rate your game in and press the rent this button</p>
     
-     <table class="table">
-     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table" EditRowStyle-BorderStyle="Groove" EditRowStyle-CssClass="table" BorderStyle="None" CellSpacing="3" GridLines="Horizontal" OnRowUpdated="GridView1_RowUpdated">
+    <%-- <table class="table">--%>
+   <%--<%--  <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table" EditRowStyle-BorderStyle="Groove" EditRowStyle-CssClass="table" 
+         BorderStyle="None" CellSpacing="3" GridLines="Horizontal">
     <Columns>
         <asp:TemplateField HeaderText="Game Id ">
             <ItemTemplate>
                 <asp:Label ID="GamesIDLabel1" runat="server" Text='<%#Eval ("GamesID") %>'></asp:Label>
                  </ItemTemplate>
         </asp:TemplateField>
+       
     </Columns>
 
         <Columns>
@@ -62,18 +65,42 @@
         </asp:TemplateField>
             <asp:TemplateField>
                  <ItemTemplate>
-                     <asp:Button ID="SubmitButton" class="btn" runat="server" Text="Rent This" />
-                 </ItemTemplate>
+                  <%--   <asp:Button ID="SubmitButton" class="btn" runat="server" Text="Rent This" />--%>
+               <%--  </ItemTemplate>
             </asp:TemplateField>
+           
     </Columns>
  
-    
+        --%>
+  <%--  </asp:GridView>--%>
+ 
+    <table class="table">
+    <asp:GridView runat="server" AutoGenerateColumns="False" DataKeyNames="GamesID" DataSourceID="SqlDataSource1" BorderStyle="None" CssClass="table" GridLines="Horizontal">
+        <Columns>
+            <asp:BoundField DataField="GamesID" HeaderText="GamesID" InsertVisible="False" ReadOnly="True" SortExpression="GamesID" />
+            <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
+            <asp:BoundField DataField="Genre" HeaderText="Genre" SortExpression="Genre" />
+            <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
+            <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
+            <asp:BoundField DataField="Review_score" HeaderText="Review_score" SortExpression="Review_score" />
+            <asp:BoundField DataField="Completed_status" HeaderText="Completed_status" SortExpression="Completed_status" />
+       <asp:CommandField ShowEditButton="true" EditText="Rent This" />
+             </Columns>
     </asp:GridView>
-  </table>
-   
 
 
+    
 
+     
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Team_ProjectConnectionString %>" 
+        SelectCommand="SELECT * FROM [Games]" UpdateCommand="update [Games] set Completed_status=@Completed_status  WHERE GamesID=@GamesID">
+        <UpdateParameters>
+            <asp:Parameter Name="Completed_status" Type="String" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
+
+
+          </table>
 
 
 </asp:Content>

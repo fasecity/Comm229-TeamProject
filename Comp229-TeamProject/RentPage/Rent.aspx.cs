@@ -20,8 +20,8 @@ namespace Comp229_TeamProject
             if (!Page.IsPostBack)
             {
 
-                GridView1.DataSource = LoadGridView();
-                GridView1.DataBind();
+                //GridView1.DataSource = LoadGridView();
+                //GridView1.DataBind();
             }
 
         }
@@ -35,9 +35,9 @@ namespace Comp229_TeamProject
             return ds;
         }
 
-        protected void GridView1_RowUpdated(object sender, GridViewUpdatedEventArgs e)
-        {
+        //protected void GridView1_RowUpdated(object sender, GridViewUpdatedEventArgs e)
+        //{
 
-        }
+        //}
     }
 }
