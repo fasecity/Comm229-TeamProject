@@ -44,6 +44,7 @@
         <%-- we make spaces --%>
         
         <p><a href="Account/Register.aspx" class="btn btn-primary btn-lg">Register</a></p>
+         <p><a href="RentPage/Rent.aspx" class="btn btn-primary btn-lg">Rent</a></p>
        
     </div>
    </div>
