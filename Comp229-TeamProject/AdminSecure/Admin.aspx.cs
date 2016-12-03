@@ -60,7 +60,7 @@ namespace Comp229_TeamProject
             {
                 connection.Open();
                 comm.ExecuteNonQuery();
-                Response.Redirect("About.aspx");
+                Response.Redirect("Admin.aspx");
             }
             //catch (Exception)
             //{

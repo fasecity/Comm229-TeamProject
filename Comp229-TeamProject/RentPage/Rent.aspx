@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Rent" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Rent.aspx.cs" Inherits="Comp229_TeamProject.Rent" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <%--Created rent page with authorization mohamoud & amandeep--%>
     <h1>Rent and Rate Game!!!!</h1>
     <p>Easily type if you want to rent and rate your game in and press the rent this button</p>
     

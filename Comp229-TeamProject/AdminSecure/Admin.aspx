@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="Admin" Language="C#" MasterPageFile="~/Site.Master"  AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="Comp229_TeamProject.Admin" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-   <h1>Read Games</h1>
+      <%-- Amandeep deol studentid-300912354
+        Mohmaoud studentid-3009435435--%>
+     <h1>Read Games</h1>
     <table class="table">
      <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table" EditRowStyle-BorderStyle="Groove" 
          EditRowStyle-CssClass="table" BorderStyle="None" CellSpacing="3" GridLines="Horizontal">
